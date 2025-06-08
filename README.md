@@ -1,4 +1,5 @@
-# Honeypot Intrusion Detection System
+
+# Intrusion Detection System with real-time email/Telegram alerts.
 
 A Python-based honeypot with packet logging, fake login pages, and automated daily alerts via email and Telegram.
 
