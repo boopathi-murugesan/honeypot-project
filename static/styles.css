@@ -1,0 +1,81 @@
+/* Reset and base layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f0f0f;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', sans-serif;
+  animation: fadeIn 1s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Container for center layout */
+.container {
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Headings */
+h1 {
+  color: #00ff88;
+  text-shadow: 0 0 10px #00ff88;
+  font-size: 8vw; /* scales with screen */
+  margin-bottom: 20px;
+}
+
+/* Paragraph */
+p {
+  font-size: 5vw; /* scales well on mobile */
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+
+/* Button styling */
+button {
+  padding: 12px 20px;
+  margin: 10px auto;
+  width: 90%;
+  max-width: 300px;
+  font-size: 4.5vw;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #00ff88, #0088ff);
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive tweaks for larger devices */
+@media (min-width: 600px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+}
