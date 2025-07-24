@@ -1,8 +1,56 @@
 <!DOCTYPE html>
-<html>
-<head><title>403 Forbidden</title></head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>403 Forbidden</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f44336, #e57373);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .error-container {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+        }
+
+        h1 {
+            font-size: 80px;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #ffe082;
+        }
+    </style>
+</head>
 <body>
-    <h1>403 Forbidden</h1>
-    <p>You are not authorized to access this page.</p>
+    <div class="error-container">
+        <h1>403</h1>
+        <p><strong>Forbidden</strong> – You are not authorized to access this page.</p>
+        <p><a href="/">Go to Homepage</a></p>
+    </div>
 </body>
 </html>

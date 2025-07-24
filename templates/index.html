@@ -1,11 +1,64 @@
 <!DOCTYPE html>
-<html>
-<head><title>Welcome</title></head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hidden Directory</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 20px 0;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffd54f;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #fff176;
+        }
+    </style>
+</head>
 <body>
-    <h1>Hidden directory</h1>
-    <p>directory:/admin/boopathi/</p>
-    <a href="/login">Login</a> |
-    <a href="/admin">Admin Panel</a> |
-    <a href="/logs">View Logs</a>
+    <div class="container">
+        <h1>🔐 Hidden Directory</h1>
+        <p>Directory: <code>/admin/boopathi/</code></p>
+        <div>
+            <a href="/login">Login</a> |
+            <a href="/admin">Admin Panel</a> 
+        </div>
+    </div>
 </body>
 </html>
